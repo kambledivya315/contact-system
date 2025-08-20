@@ -24,8 +24,11 @@ Technologies Used
 Features
 
 ✅ Add new contacts with details (Name, Email, Phone, etc.)
+
 ✅ Store contact information in PostgreSQL
+
 ✅ Simple and clean user interface
+
 ✅ REST API integration between Angular & Spring Boot
 
 ** Prerequisites
@@ -81,5 +84,6 @@ API  ENDPOINTS
 3. Tejaswini Kale: tejaswinikale494@gmail.com
    
 5. Priyadarshani pathrut: priyadpathrut@gmail.com
+
 
 
