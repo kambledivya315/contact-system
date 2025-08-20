@@ -1,5 +1,5 @@
  Contact System - Contact Management Application
- **  Introduction
+ * Introduction
 
 The Contact System is a simple and user-friendly Contact Management Web Application built using Angular for the frontend and Spring Boot for the backend, with PostgreSQL as the database.
 It allows users to add new contacts and view all saved contacts through a responsive and attractive UI.
@@ -81,4 +81,5 @@ API  ENDPOINTS
 3. Tejaswini Kale: tejaswinikale494@gmail.com
    
 5. Priyadarshani pathrut: priyadpathrut@gmail.com
+
 
