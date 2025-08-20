@@ -1,0 +1,24 @@
+<h2>Contacts</h2>
+
+<button routerLink="/add-contact">➕ Add New Contact</button>
+
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let contact of contacts">
+      <td>{{ contact.name }}</td>
+      <td>{{ contact.email }}</td>
+      <td>{{ contact.phone }}</td>
+      <td>
+        <button (click)="viewDetails(contact.id!)">Details</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

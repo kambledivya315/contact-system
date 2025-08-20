@@ -1,0 +1,129 @@
+<p>contact-details works!</p>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        button {
+            padding: 8px 12px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #333;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contacts</h1>
+        <button onclick="addContact()">➕ Add New Contact</button>
+        <table id="contactsTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Contacts will be added dynamically here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Fetch contacts from backend API
+        async function fetchContacts() {
+            try {
+                const response = await fetch('http://localhost:3000/contacts'); // Update API URL if needed
+                const contacts = await response.json();
+                const tableBody = document.querySelector("#contactsTable tbody");
+                tableBody.innerHTML = "";
+
+                if (contacts.length === 0) {
+                    tableBody.innerHTML = `<tr><td colspan="4">No contacts found</td></tr>`;
+                    return;
+                }
+
+                contacts.forEach(contact => {
+                    const row = `
+                        <tr>
+                            <td>${contact.name}</td>
+                            <td>${contact.email}</td>
+                            <td>${contact.phone}</td>
+                            <td>
+                                <button onclick="editContact(${contact.id})">Edit</button>
+                                <button onclick="deleteContact(${contact.id})" style="background-color:red;">Delete</button>
+                            </td>
+                        </tr>
+                    `;
+                    tableBody.innerHTML += row;
+                });
+            } catch (error) {
+                console.error("Error fetching contacts:", error);
+            }
+        }
+
+        function addContact() {
+            alert("Add Contact feature coming soon!");
+        }
+
+        function editContact(id) {
+            alert("Edit contact with ID: " + id);
+        }
+
+        function deleteContact(id) {
+            if (confirm("Are you sure you want to delete this contact?")) {
+                alert("Delete feature coming soon for ID: " + id);
+            }
+        }
+
+        // Load contacts when page loads
+        window.onload = fetchContacts;
+    </script>
+</body>
+</html>
