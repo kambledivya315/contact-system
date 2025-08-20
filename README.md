@@ -64,8 +64,15 @@ API  ENDPOINTS
 | POST   | /api/contacts | Add a new contact   |
 | GET    | /api/contacts | Get all contacts    |
 
-##  screenshot :
+## 📸 Screenshots
 
+### **1. Add Contact Page**
+(![Screenshot 2025-08-20 155346](https://github.com/user-attachments/assets/d7ce3be6-2125-4a5e-9e21-67336b1af203)
+)
+
+### **2. Contact List in database **
+(![Screenshot 2025-08-20 234150](https://github.com/user-attachments/assets/cb1a0bec-e8e0-4914-9007-4bc9c0ea98b1)
+)
 
 
 **Developers (group member) :
@@ -74,3 +81,4 @@ API  ENDPOINTS
 3. Tejaswini Kale: tejaswinikale494@gmail.com
    
 5. Priyadarshani pathrut: priyadpathrut@gmail.com
+
