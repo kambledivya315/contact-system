@@ -85,7 +85,8 @@ API  ENDPOINTS
    
 5. Priyadarshani pathrut: priyadpathrut@gmail.com
    
-7. Smiksha Katkar : smikshakatker@gmail.com
+7. Smiksha Katkar : samikshakatker671@gmail.com
+
 
 
 
