@@ -84,6 +84,9 @@ API  ENDPOINTS
 3. Tejaswini Kale: tejaswinikale494@gmail.com
    
 5. Priyadarshani pathrut: priyadpathrut@gmail.com
+   
+7. Smiksha Katkar : smikshakatker@gmail.com
+
 
 
 
